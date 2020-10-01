@@ -102,11 +102,11 @@ tidak menambahkan variable "catatan" pada path. Pada fungsi Controller yang meme
 
 Pertanyaan 4: Jika Papa APAP ingin melihat resep untuk pasien yang bernama Quanta, link apa yang
 harus diakses?
+
+Jawab:
 Saya tidak bisa menemukan fungsi yang dapat mencari resep berdasarkan nama pada tutorial yang
 diberikan kecuali jika diperintahkan untuk membuat fungsi baru. Untuk saat ini, pencarian dengan
 nama bisa dilakukan secara manual dengan mengakses link [ini](http://localhost:8080/resep/viewall)
-
-Jawab:
 
 Pertanyaan 5: Tambahkan 1 contoh resep lainnya sesukamu. Lalu cobalah untuk mengakses
 http://localhost:8080/resep/viewall , apa yang akan ditampilkan? Sertakan juga bukti screenshotmu.
