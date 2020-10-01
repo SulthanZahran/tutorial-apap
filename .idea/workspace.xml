@@ -44,7 +44,6 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="spring" />
   </component>
-=======
   <component name="RunManager" selected="Spring Boot.Unnamed">
     <configuration type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="tutorial-apap" />
@@ -64,7 +63,6 @@
       <item itemvalue="Spring Boot.Unnamed" />
     </list>
   </component>
->>>>>>> feat/tutorial-1-hitung-bmi
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SpringGeneralSettings">
     <option name="allowAutoConfigurationMode" value="true" />
@@ -87,6 +85,10 @@
       <workItem from="1600931490120" duration="15000" />
       <workItem from="1600931593371" duration="638000" />
       <workItem from="1600949280664" duration="9259000" />
+      <workItem from="1601526321447" duration="106000" />
+      <workItem from="1601526454443" duration="3000" />
+      <workItem from="1601541248231" duration="5096000" />
+      <workItem from="1601556445095" duration="3589000" />
     </task>
     <servers />
   </component>
@@ -138,6 +140,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="142" y="5" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1600926213479" />
+    <state x="91" y="0" key="new project wizard" timestamp="1601524853146">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="91" y="0" key="new project wizard/0.0.1280.720@0.0.1280.720" timestamp="1601524853146" />
     <state x="297" y="161" key="run.anything.popup" timestamp="1600923491781">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
