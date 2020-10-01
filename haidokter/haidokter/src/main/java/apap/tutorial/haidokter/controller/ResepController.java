@@ -83,12 +83,14 @@ public class ResepController {
 
     @GetMapping(value = "/resep/delete/no-resep/{noResep}")
     public String hapusResep(@PathVariable(value = "noResep") String noResep, Model model){
-
-        resepService.deleteResep(noResep);
+        int err = 1;
+        err = resepService.deleteResep(noResep);
 
         model.addAttribute("nomorResep", noResep);
-
-        return "delete-resep";
+        
+        if(err == 0){return "delete-resep";}
+        else {return "deleteError-resep";}
+        
     }
 
 }

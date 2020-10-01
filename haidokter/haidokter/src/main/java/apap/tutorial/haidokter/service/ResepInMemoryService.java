@@ -46,13 +46,13 @@ public class ResepInMemoryService implements ResepService{
     }
 
     @Override
-    public void deleteResep(String noResep){
+    public int deleteResep(String noResep){
         for(ResepModel i: listResep){
-            if(noResep.equals(i.getNoResep())){
+            if(noResep.equals(i.getNoResep())) {
                 listResep.remove(i);
-                break;
+                return 0;
             }
-
         }
+        return 1;
     }
 }
