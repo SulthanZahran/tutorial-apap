@@ -18,5 +18,4 @@ public interface ResepService{
 
     int deleteResep(String noResep);
 
-    void deleteAllResep();
 }

@@ -55,9 +55,5 @@ public class ResepInMemoryService implements ResepService {
         }
         return 1;
     }
-
-    @Override
-    public void deleteAllResep() {
-        listResep.clear();
-    }
 }
+

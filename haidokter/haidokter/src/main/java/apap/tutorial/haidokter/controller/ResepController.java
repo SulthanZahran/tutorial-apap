@@ -93,10 +93,4 @@ public class ResepController {
         
     }
 
-    @GetMapping(value = "/resep/delete-all")
-    public String hapusSemuaResep(){
-        resepService.deleteAllResep();
-        return "deleteAll-resep";
-    }
-
 }
