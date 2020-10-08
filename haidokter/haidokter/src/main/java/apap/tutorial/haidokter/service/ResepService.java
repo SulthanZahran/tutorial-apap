@@ -17,4 +17,6 @@ public interface ResepService{
     void updateResepByNomorResep(String noResep, String catatan);
 
     int deleteResep(String noResep);
+
+    void deleteAllResep();
 }
