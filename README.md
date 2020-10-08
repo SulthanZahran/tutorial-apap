@@ -50,7 +50,11 @@ MsBuild, dan lain-lain
 6. Selain untuk pengembangan web, apa saja yang bisa dikembangkan dengan Spring framework?
 Spring framework dapat digunakan untuk memudahkan kita dalam membuat program yang minim akan
 komponen-komponen yang memiliki ketergantungan satu sama lain. Spring framework juga memudahkan
+<<<<<<< HEAD
 developer dalam melakukan manajemen transaksi. Selain itu Spring framework 
+=======
+developer dalam melakukan manajemen transaksi.
+>>>>>>> 88decbf1f48a94970c4d994b06baba8756150df5
 
 7. Apa perbedaan dari @RequestParam dan @PathVariable? Kapan sebaiknya menggunakan
 @RequestParam atau @PathVariable?
@@ -68,3 +72,51 @@ dikemudian hari, dan tambahkan tulisan yang membuat Anda mengerti)
 (Anda dapat membuat tampilan code dalam README.md menjadi lebih baik. Cari tahu lebih dalam
 tentang penulisan README.md di GitHub pada link
 [berikut](https://help.github.com/en/articles/basic-writing-and-formatting-syntax))
+
+## Tutorial 2
+Pertanyaan 1: Cobalah untuk menambahkan sebuah resep dengan mengakses link berikut:
+http://localhost:8080/resep/add?noResep=1&namaDokter=Papa%20APAP&namaPasien=Quanta%20F
+asilkom&catatan=Semangat
+Apa yang terjadi? Jelaskan mengapa hal tersebut dapat terjadi
+
+Jawab:
+Pada halaman localhost:8080 akan muncul error Whitelable Error Page. Hal ini terjadi karena kita
+belum membuat template/view tempat kita menampilkan halamannya.
+
+Pertanyaan 2: Menurut kamu anotasi @Autowired pada class Controller tersebut merupakan
+implementasi dari konsep apa? Dan jelaskan secara singkat cara kerja @Autowired tersebut dalam
+konteks service dan controller yang telah kamu buat
+
+Jawab:
+Anotasi @Autowired yang digunakan pada class Controller merupakan implementasi dari konsep dependency
+injection. Dengan anotasi ini, kita tidak perlu untuk membuat constructor dan setter pada attribut
+class yang menggunakan interface tersebut selama ada bean/class lain yang meng-implement interface
+tersebut. Anotasi ini akan meng-inject constructor dan setter dari class lain yang meng-implement
+interface tersebut.
+
+Pertanyaan 3: Cobalah untuk menambahkan sebuah resep dengan mengakses link berikut:
+http://localhost:8080/resep/add?noResep=1&namaDokter=Papa%20APAP&namaPasien=Quanta%20F
+asilkom Apa yang terjadi? Jelaskan mengapa hal tersebut dapat terjadi.
+
+Jawab:
+Pada halaman localhost:8080 akan muncul error Whitelable Error Page. Hal ini terjadi karena kita
+tidak menambahkan variable "catatan" pada path. Pada fungsi Controller yang memetakan ke halaman 
+/resep/add , kita memerlukan 4 variable dari path untuk menampilkan halaman tersebut, yaitu : 
+"noResep", "namaDokter", "namaPasien", dan "catatan".
+
+Pertanyaan 4: Jika Papa APAP ingin melihat resep untuk pasien yang bernama Quanta, link apa yang
+harus diakses?
+
+Jawab:
+Saya tidak bisa menemukan fungsi yang dapat mencari resep berdasarkan nama pada tutorial yang
+diberikan kecuali jika diperintahkan untuk membuat fungsi baru. Untuk saat ini, pencarian dengan
+nama bisa dilakukan secara manual dengan mengakses link [ini](http://localhost:8080/resep/viewall)
+
+Pertanyaan 5: Tambahkan 1 contoh resep lainnya sesukamu. Lalu cobalah untuk mengakses
+http://localhost:8080/resep/viewall , apa yang akan ditampilkan? Sertakan juga bukti screenshotmu.
+
+Jawab:
+Page tersebut akan menampilkan semua resep yang telah dibuat dan semua attribut dari resep, yaitu:
+noResep, namaDokter, namaPasien, dan catatan.
+![](images/no5.jpg)
+

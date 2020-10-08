@@ -11,6 +11,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae417fc4-418a-4397-89d6-39c48ab2bbe8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/haidokter/haidokter/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haidokter/haidokter/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haidokter/haidokter/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haidokter/haidokter/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haidokter/haidokter/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haidokter/haidokter/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haidokter/haidokter/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haidokter/haidokter/src/main/java/apap/tutorial/haidokter/HaidokterApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haidokter/haidokter/src/main/java/apap/tutorial/haidokter/controller/ResepController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haidokter/haidokter/src/main/java/apap/tutorial/haidokter/model/ResepModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haidokter/haidokter/src/main/java/apap/tutorial/haidokter/service/ResepInMemoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haidokter/haidokter/src/main/java/apap/tutorial/haidokter/service/ResepService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haidokter/haidokter/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haidokter/haidokter/src/main/resources/templates/add-resep.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haidokter/haidokter/src/main/resources/templates/delete-resep.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haidokter/haidokter/src/main/resources/templates/deleteError-resep.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haidokter/haidokter/src/main/resources/templates/updateCatatan-resep.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haidokter/haidokter/src/main/resources/templates/view-resep.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haidokter/haidokter/src/main/resources/templates/viewall-resep.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/haidokter/haidokter/src/test/java/apap/tutorial/haidokter/HaidokterApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/no5.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -44,7 +65,6 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="spring" />
   </component>
-=======
   <component name="RunManager" selected="Spring Boot.Unnamed">
     <configuration type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="tutorial-apap" />
@@ -64,7 +84,6 @@
       <item itemvalue="Spring Boot.Unnamed" />
     </list>
   </component>
->>>>>>> feat/tutorial-1-hitung-bmi
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SpringGeneralSettings">
     <option name="allowAutoConfigurationMode" value="true" />
@@ -87,6 +106,12 @@
       <workItem from="1600931490120" duration="15000" />
       <workItem from="1600931593371" duration="638000" />
       <workItem from="1600949280664" duration="9259000" />
+      <workItem from="1601526321447" duration="106000" />
+      <workItem from="1601526454443" duration="3000" />
+      <workItem from="1601541248231" duration="5096000" />
+      <workItem from="1601556445095" duration="4798000" />
+      <workItem from="1601563826650" duration="495000" />
+      <workItem from="1600949280664" duration="7380000" />
     </task>
     <servers />
   </component>
@@ -138,6 +163,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="142" y="5" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1600926213479" />
+    <state x="91" y="0" key="new project wizard" timestamp="1601524853146">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="91" y="0" key="new project wizard/0.0.1280.720@0.0.1280.720" timestamp="1601524853146" />
     <state x="297" y="161" key="run.anything.popup" timestamp="1600923491781">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
