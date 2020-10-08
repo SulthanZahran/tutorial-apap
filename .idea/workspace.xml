@@ -15,6 +15,7 @@
       <change beforePath="$PROJECT_DIR$/haidokter/haidokter/src/main/java/apap/tutorial/haidokter/controller/ResepController.java" beforeDir="false" afterPath="$PROJECT_DIR$/haidokter/haidokter/src/main/java/apap/tutorial/haidokter/controller/ResepController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/haidokter/haidokter/src/main/java/apap/tutorial/haidokter/service/ResepInMemoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/haidokter/haidokter/src/main/java/apap/tutorial/haidokter/service/ResepInMemoryService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/haidokter/haidokter/src/main/java/apap/tutorial/haidokter/service/ResepService.java" beforeDir="false" afterPath="$PROJECT_DIR$/haidokter/haidokter/src/main/java/apap/tutorial/haidokter/service/ResepService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +93,7 @@
       <workItem from="1601541248231" duration="5096000" />
       <workItem from="1601556445095" duration="4798000" />
       <workItem from="1601563826650" duration="495000" />
+      <workItem from="1600949280664" duration="7380000" />
     </task>
     <servers />
   </component>

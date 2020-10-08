@@ -50,7 +50,7 @@ MsBuild, dan lain-lain
 6. Selain untuk pengembangan web, apa saja yang bisa dikembangkan dengan Spring framework?
 Spring framework dapat digunakan untuk memudahkan kita dalam membuat program yang minim akan
 komponen-komponen yang memiliki ketergantungan satu sama lain. Spring framework juga memudahkan
-developer dalam melakukan manajemen transaksi. Selain itu Spring framework 
+developer dalam melakukan manajemen transaksi.
 
 7. Apa perbedaan dari @RequestParam dan @PathVariable? Kapan sebaiknya menggunakan
 @RequestParam atau @PathVariable?
@@ -115,4 +115,3 @@ Jawab:
 Page tersebut akan menampilkan semua resep yang telah dibuat dan semua attribut dari resep, yaitu:
 noResep, namaDokter, namaPasien, dan catatan.
 ![](images/no5.jpg)
-
