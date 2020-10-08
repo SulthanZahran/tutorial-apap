@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete Catatan Resep Error</title>
+</head>
+<body>
+<h2 th:text="'Resep dengan nomor resep ' + ${nomorResep} + ' tidak ditemukan, proses delete dibatalkan
+'"></h2>
+<a href="/resep/viewall">Kembali</a>
+</body>
+</html>
