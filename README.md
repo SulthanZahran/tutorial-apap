@@ -54,7 +54,6 @@ komponen-komponen yang memiliki ketergantungan satu sama lain. Spring framework 
 developer dalam melakukan manajemen transaksi. Selain itu Spring framework 
 =======
 developer dalam melakukan manajemen transaksi.
->>>>>>> 88decbf1f48a94970c4d994b06baba8756150df5
 
 7. Apa perbedaan dari @RequestParam dan @PathVariable? Kapan sebaiknya menggunakan
 @RequestParam atau @PathVariable?
@@ -120,3 +119,43 @@ Page tersebut akan menampilkan semua resep yang telah dibuat dan semua attribut 
 noResep, namaDokter, namaPasien, dan catatan.
 ![](images/no5.jpg)
 
+
+## Tutorial 3
+1. Pada class ResepDb, terdapat method findByNoResep, apakah kegunaan dari method tersebut?
+Jawab: Method ini berguna untuk mencari data resep dari database yang sudah dibuat. Method ini
+menggunakan sebuah parameter yaitu noResep untuk pencarian.
+
+2. Pada class ResepController, jelaskan perbedaan method addResepFormPage dan addResepSubmit?
+Jawab: Kedua method memiliki path yang sama namun memiliki kegunaan yang berbeda. Method 
+addResepFormPage memiliki tujuan untuk me-render ke halaman yang berisi form. Halaman tersebut
+digunakan untuk membuat resep baru. Method addResepSubmit bertujuan untuk merender halaman
+yang menunjukkan bahwa resep yang baru ditambahkan berhasil di-submit. Method addResepSubmit
+akan dijalankan setelah form pada method addResepFormPage berhasil di-submit.
+
+3. Jelaskan kegunaan dari JPA Repository!
+Jawab: JPA(Java Persistence API) berguna untuk melakukan pemetaan class ke tabel-tabel database
+tanpa perlu repot mengurusi layer database. Dengan JPA juga, kita dimudahkan dalam melakukan 
+pemeliharaan dan manipulasi data di database tersebut.
+
+4. Sebutkan dan jelaskan di bagian kode mana sebuah relasi antara ResepModel dan ObatModel dibuat?
+Jawab: ResepModel dan ObatModel berelasi secara one-to-many dari resep ke obat. Hal ini berarti
+sebuah resep bisa memiliki banyak obat.
+
+![](images/tutorial3.jpg)
+
+Pada gambar di atas digunakan @OneToMany dari resep ke obat yang terletak pada ListObat
+
+![](images/tutorial32.jpg)
+Pada gambar di atas digunakan @ManyToOne dari obat ke resep
+
+5. Jelaskan kegunaan FetchType.LAZY, CascadeType.ALL, dan FetchType.EAGER!
+Jawab:
+
+FetchType.LAZY : berguna untuk memerintahkan kepada hibernate agar tidak mengambil object child
+saat melakukan fetch terhadap object parent.
+
+FetchType.EAGER : berguna untuk memerintahkan kepada hibernate agar mengambil semua object child
+saat melakukan fetch terhadap object parent.
+
+CascadeType.ALL : berguna untuk menerapkan semua operasi yang dikenakan kepada parent ke child-nya
+secara otomatis

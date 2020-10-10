@@ -2,6 +2,7 @@ package apap.tutorial.haidokter.service;
 
 import apap.tutorial.haidokter.model.ResepModel;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public interface ResepService{
@@ -12,9 +13,14 @@ public interface ResepService{
     List<ResepModel> getResepList();
 
     //Method untuk mendapatkan data sebuah resep berdasarkan nomor resep
-    ResepModel getResepByNomorResep(String noResep);
 
-    void updateResepByNomorResep(String noResep, String catatan);
+    ResepModel getResepByNomorResep(Long noResep);
 
-    int deleteResep(String noResep);
+//    void updateResepByNomorResep(String noResep, String catatan);
+
+    ResepModel updateResep(ResepModel resepModel);
+
+//    int deleteResep(String noResep);
+
+    void deleteResep(ResepModel resep);
 }
