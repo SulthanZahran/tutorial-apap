@@ -10,7 +10,34 @@
     <select />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="ae417fc4-418a-4397-89d6-39c48ab2bbe8" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="ae417fc4-418a-4397-89d6-39c48ab2bbe8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/haidokter/haidokter/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/haidokter/haidokter/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/haidokter/haidokter/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/haidokter/haidokter/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/haidokter/haidokter/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/haidokter/haidokter/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/haidokter/haidokter/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/haidokter/haidokter/src/main/java/apap/tutorial/haidokter/HaidokterApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/haidokter/haidokter/src/main/java/apap/tutorial/haidokter/controller/ResepController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/haidokter/haidokter/src/main/java/apap/tutorial/haidokter/model/ResepModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/haidokter/haidokter/src/main/java/apap/tutorial/haidokter/service/ResepInMemoryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/haidokter/haidokter/src/main/java/apap/tutorial/haidokter/service/ResepService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/haidokter/haidokter/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/haidokter/haidokter/src/main/resources/templates/add-resep.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/haidokter/haidokter/src/main/resources/templates/delete-resep.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/haidokter/haidokter/src/main/resources/templates/deleteError-resep.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/haidokter/haidokter/src/main/resources/templates/updateCatatan-resep.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/haidokter/haidokter/src/main/resources/templates/view-resep.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/haidokter/haidokter/src/main/resources/templates/viewall-resep.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/haidokter/haidokter/src/test/java/apap/tutorial/haidokter/HaidokterApplicationTests.java" beforeDir="false" />
+    </list>
+>>>>>>> 4558e5e7f35baa327bce6bd1d2c3f6ebbb174916
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,8 +115,13 @@
       <workItem from="1601556445095" duration="4798000" />
       <workItem from="1601563826650" duration="495000" />
       <workItem from="1600949280664" duration="7380000" />
+<<<<<<< HEAD
       <workItem from="1602148811960" duration="60000" />
       <workItem from="1602249279012" duration="595000" />
+=======
+      <workItem from="1602255233668" duration="8474000" />
+      <workItem from="1602329412954" duration="1284000" />
+>>>>>>> 4558e5e7f35baa327bce6bd1d2c3f6ebbb174916
     </task>
     <servers />
   </component>
@@ -117,10 +149,17 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="371" y="150" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1280.720@0.0.1280.720" timestamp="1600926295432" />
+<<<<<<< HEAD
     <state x="421" y="115" key="FileChooserDialogImpl" timestamp="1602249336654">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="421" y="115" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1602249336654" />
+=======
+    <state x="421" y="115" key="FileChooserDialogImpl" timestamp="1602329468424">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="421" y="115" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1602329468424" />
+>>>>>>> 4558e5e7f35baa327bce6bd1d2c3f6ebbb174916
     <state width="1237" height="176" key="GridCell.Tab.0.bottom" timestamp="1600930829221">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
