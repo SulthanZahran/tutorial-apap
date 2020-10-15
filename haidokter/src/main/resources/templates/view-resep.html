@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>View Resep</title>
+</head>
+<body>
+<section>
+    <h2>Informasi Resep</h2>
+    <h3 th:text="'Nomor Resep ' + ${resep.noResep}"></h3>
+    <h3 th:text="'Nama Dokter ' + ${resep.namaDokter}"></h3>
+    <h3 th:text="'Nama Pasien ' + ${resep.namaPasien}"></h3>
+    <h3 th:text="'Catatan ' + ${resep.catatan}"></h3>
+
+    <td><a th:href="@{/resep/change/} + ${resep.noResep}">Change Resep</a></td>
+</section>
+<section>
+    <div th:if="${listObat.size() != 0}">
+        <div th:each="obat : ${listObat}">
+            <h3 th:text="'ID Obat: ' + ${obat.id}"></h3>
+            <h3 th:text="'nama: ' + ${obat.nama}"></h3>
+
+            <h3 th:if="${obat.bentuk == 0}">Bentuk: Tablet</h3>
+            <h3 th:if="${obat.bentuk == 1}">Bentuk: Kapsul</h3>
+            <h3 th:if="${obat.bentuk == 2}">Bentuk: Sirup</h3>
+
+            <h3 th:text="'Kuantitas: ' + ${obat.kuantitas}"></h3>
+
+            <a th:href="@{/obat/change/} + ${obat.id}">Change Obat</a>
+            <a th:href="@{/obat/delete/}+ ${obat.id}">Delete Obat</a>
+        </div>
+        <a th:href="@{/resep/tdkdelete/}">Delete Resep</a>
+        <br><br>
+    </div>
+    <div th:if="${listObat.size() == 0}">
+        <h2>Resep belum memiliki daftar obat</h2>
+        <a th:href="@{/resep/delete/} + ${resep.noResep}">Delete Resep</a>
+    </div>
+
+
+    <td><a th:href="@{/obat/add/} + ${resep.noResep}">Add Obat</a></td>
+</section>
+</body>
+</html>

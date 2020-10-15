@@ -1,0 +1,15 @@
+package apap.tutorial.haidokter.repository;
+
+import apap.tutorial.haidokter.model.ObatModel;
+import apap.tutorial.haidokter.model.ResepModel;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.Optional;
+
+@Repository
+public interface ObatDb extends JpaRepository<ObatModel, Long>{
+    Optional<ObatModel> findById(Long id);
+
+    Optional<ObatModel> findByBentukdanKuantitas(Integer bentuk, Integer kuantitas);
+}
