@@ -35,6 +35,12 @@ public class ObatModel {
     @JsonIgnore
     private ResepModel resepModel;
 
+    @ManyToOne(fetch = FetchType.EAGER, optional = false)
+    @JoinColumn(name = "apotek_id", referencedColumnName = "id_apotek", nullable = false)
+    @OnDelete(action = OnDeleteAction.CASCADE)
+    @JsonIgnore
+    private ApotekModel apotekModel;
+
     public void setResepModel(ResepModel resepModel) {
         this.resepModel = resepModel;
     }

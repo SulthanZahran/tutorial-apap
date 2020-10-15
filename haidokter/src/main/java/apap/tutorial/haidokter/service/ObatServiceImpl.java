@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 @Service
 @Transactional
 public class ObatServiceImpl implements ObatService {
@@ -42,5 +44,25 @@ public class ObatServiceImpl implements ObatService {
     @Override
     public void deleteObat(ObatModel obat){
         obatDb.delete(obat);
+    }
+
+    @Override
+    public List<ObatModel> getObatByBentukKuantitas(String bentuk, Integer kuantitas){
+        private List<ObatModel> listObat;
+        for(ObatModel i: obatDb.findAll()){
+            if(bentuk == "Kapsul"){
+               ObatModel obat = obatDb.findByBentukdanKuantitas(0, kuantitas).get();
+               listObat.add(obat);
+            }
+            else if(bentuk == "Tablet"){
+                ObatModel obat = obatDb.findByBentukdanKuantitas(1, kuantitas).get();
+                listObat.add(obat);
+            }
+            else if(bentuk == "Sirup"){
+                ObatModel obat = obatDb.findByBentukdanKuantitas(2, kuantitas).get();
+                listObat.add(obat);
+            }
+        }
+        return listObat;
     }
 }

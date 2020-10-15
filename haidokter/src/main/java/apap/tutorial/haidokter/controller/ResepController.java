@@ -147,6 +147,8 @@ public class ResepController {
         try {
             ResepModel updateResep = resepService.updateResep(resep);
             model.addAttribute("resep", updateResep);
+            Long noResep = updateResep.getNoResep();
+            model.addAttribute("noResep", noResep);
 
             return "update-resep";
         }
