@@ -10,6 +10,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.ui.Model;
 
+import javax.servlet.http.HttpServletRequest;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -23,13 +25,25 @@ public class ObatController {
     ObatService obatService;
 
     @GetMapping("/obat/add/{noResep}")
-    private String addResepFormPage(@PathVariable Long noResep, Model model){
+    private String addObatFormPage(@PathVariable Long noResep, Model model){
         ObatModel obat =new ObatModel();
         ResepModel resep = resepService.getResepByNomorResep(noResep);
         obat.setResepModel(resep);
         model.addAttribute("obat", obat);
 
         return "form-add-obat";
+    }
+
+    @GetMapping("/obat/add-multiple/{noResep}")
+    private String addMultipleObatFormPage(@PathVariable Long noResep, Model model){
+        ObatModel obat =new ObatModel();
+        List<ObatModel> listObat = new ArrayList<ObatModel>();
+        ResepModel resep = resepService.getResepByNomorResep(noResep);
+        obat.setResepModel(resep);
+        model.addAttribute("obat", obat);
+        model.addAttribute("resep", resep);
+
+        return "form-add-multiple-obat";
     }
 
     @PostMapping("/obat/add")
@@ -39,6 +53,16 @@ public class ObatController {
         obatService.addObat(obat);
         model.addAttribute("nama", obat.getNama());
 
+        return "add-obat";
+    }
+
+    @PostMapping(value = "/obat/add/{noResep}", params = {"submit"})
+    private String addObatSubmit(@ModelAttribute ResepModel resep, Model model){
+        for(ObatModel obat: resep.getListObat()){
+            obat.setResepModel(resep);
+            obatService.addObat(obat);
+        }
+        model.addAttribute("listObat", resep.getListObat());
         return "add-obat";
     }
 
@@ -83,4 +107,14 @@ public class ObatController {
         }
         return "delete-obat";
     }
+
+//    @PostMapping(value = "/obat/add/{noResep}", params = {"addRow"})
+//    private String addRow(@ModelAttribute ResepModel resep, Model model){
+//    }
+
+//    @PostMapping(value = "/obat/add/{noResep}", params = {"deleteRow"})
+//    private String deleteRow(@ModelAttribute ResepModel resep, final HttpServletRequest req, Model model){
+//
+//    }
+
 }
