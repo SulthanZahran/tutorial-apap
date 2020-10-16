@@ -3,8 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Errro resep</title>
+  <object th:include="fragments/fragment :: css" th:remove="tag"></object>
+  <object th:include="fragments/fragment :: js" th:remove="tag"></object>
 </head>
+
 <body>
+
+<nav th:replace="fragments/fragment :: navbar"></nav>
 <h2>Resep tidak ditemukan, proses dibatalkan</h2>
 <a href="/">Kembali</a>
 </body>

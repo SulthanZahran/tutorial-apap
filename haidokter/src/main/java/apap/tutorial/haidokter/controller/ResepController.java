@@ -176,6 +176,25 @@ public class ResepController {
         }
     }
 
+    @GetMapping("/resep/view/{noResep}")
+    public String viewResepPath(
+            @PathVariable Long noResep,
+            Model model
+    ){
+        try {
+            ResepModel resep = resepService.getResepByNomorResep(noResep);
+            List<ObatModel> listObat = resep.getListObat();
+
+            model.addAttribute("resep", resep);
+            model.addAttribute("listObat", listObat);
+
+            return "view-resep";
+        }
+        catch (Exception e){
+            return "error-resep";
+        }
+    }
+
     @RequestMapping("/resep/delete/{noResep}")
     public String deleteResep(@PathVariable(value = "noResep") Long noResep, Model model){
         try {
