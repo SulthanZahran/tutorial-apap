@@ -208,6 +208,9 @@ dengan sebuah properti JSON.
 
 3. Apa kegunaan atribut WebClient?
 Jawab:
+WebClient adalah sebuah interface yang mewakili titik masuk utama untuk melakukan request 
+web. WebClient berfungsi sebagai representasi entry point utama pada saat melakukan web
+request.
 
 4. Apa itu ResponseEntity dan BindingResult? Apa kegunaannya?
 Jawab:
