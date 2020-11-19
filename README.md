@@ -159,3 +159,32 @@ saat melakukan fetch terhadap object parent.
 
 CascadeType.ALL : berguna untuk menerapkan semua operasi yang dikenakan kepada parent ke child-nya
 secara otomatis
+
+## Tutorial 4
+1. Jelaskan perbedaan th:include dan th:replace!
+Jawab:
+th:include akan menambahkan konten dari fragment ke dalam host tag-nya tanpa fragment tag-nya, 
+sementara th:replace akan mengganti host tag-nya dengan fragment. Penggunaan th:replace akan
+menghilangkan host tag dan akan menggantinya dengan fragment beserta fragment tag-nya.
+
+2. Jelaskan apa fungsi dari th:object!
+Jawab:
+th:object berguna untuk menentukan object yang akan menjadi submit dari sebuah form. th:object
+memiliki nilai sebuah nama dari sebuah model.
+
+3. Jelaskan perbedaan dari * dan $ pada saat penggunaan th:object! Kapan harus dipakai?
+Jawab:
+Pada penggunaan attribut pada th:object, penggunaan $ harus disertai dengan nama model seperti
+ "${resep.noResep}", sementara penggunaan * tidak perlu menggunakan nama model selama object 
+ sudah ditentukan.
+![](images/tutorial32.jpg)
+Pada gambar dapat terlihat penggunaan * tanpa perlu menggunakan nama model karena object resep
+sudah dipilih sebelumnya. Jika object belum dipilih, maka * juga harus menggunakan nama model
+juga sehingga penggunaan * dan $ sama (ekuivalen)
+
+4. Bagaimana kamu menyelesaikan latihan nomor 3?
+Jawab:
+Pada latihan nomor tiga, pada fragment, saya menambahkan sebuah tag div yang isinya adalah
+text. Text tersebut akan berisi sesuai dengan isi dari variable yang bernama "page". Untuk
+setiap page yang ingin ditambah text tersebut, saya akan menambah variabel page pada
+bagian navbar. Hal ini bertujuan untuk mengirim variable "page" ke fragment.

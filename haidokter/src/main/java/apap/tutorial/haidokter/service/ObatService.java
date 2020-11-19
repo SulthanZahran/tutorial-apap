@@ -14,5 +14,7 @@ public interface ObatService {
 
     void deleteObat(ObatModel obat);
 
-    ObatModel getObatByBentukKuantitas(String bentuk, Integer kuantitas);
+    void deleteObatByID(Long id);
+
+//    ObatModel getObatByBentukKuantitas(String bentuk, Integer kuantitas);
 }
