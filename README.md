@@ -188,3 +188,29 @@ Pada latihan nomor tiga, pada fragment, saya menambahkan sebuah tag div yang isi
 text. Text tersebut akan berisi sesuai dengan isi dari variable yang bernama "page". Untuk
 setiap page yang ingin ditambah text tersebut, saya akan menambah variabel page pada
 bagian navbar. Hal ini bertujuan untuk mengirim variable "page" ke fragment.
+
+## Tutorial 5
+1. Apa itu Postman? Apa kegunaannya?
+Jawab:
+Postman adalah sebuah aplikasi yang berguna untuk uji coba REST API. Postman menawarkan
+banyak fitur yang membantu dalam pengembangan API seperti:
+- Collection
+- Environment
+- Response
+- Mock Server
+- dll
+
+2. Jelaskan fungsi dari anotasi @JsonIgnoreProperties dan @JsonProperty.
+Jawab:
+@JsonIgnoreProperties berguna untuk mengabaikan attribut yang tidak tercantum dalam class
+sementara @JsonProperty berguna untuk menandai non-standard setter/getter ketika digunakan
+dengan sebuah properti JSON.
+
+3. Apa kegunaan atribut WebClient?
+Jawab:
+
+4. Apa itu ResponseEntity dan BindingResult? Apa kegunaannya?
+Jawab:
+ResponseEntity adalah objek yang merepresentasikan HTTP response. Dengan ResponseEntity kita
+dapat mengkonfigurasikan HTTP response secara keseluruhan. BindingResult adalah sebuah objek 
+Spring yang menyimpan hasil validasi dan berisi kesalahan yang mungkin terjadi. 
