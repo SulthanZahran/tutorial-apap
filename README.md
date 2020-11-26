@@ -50,9 +50,6 @@ MsBuild, dan lain-lain
 6. Selain untuk pengembangan web, apa saja yang bisa dikembangkan dengan Spring framework?
 Spring framework dapat digunakan untuk memudahkan kita dalam membuat program yang minim akan
 komponen-komponen yang memiliki ketergantungan satu sama lain. Spring framework juga memudahkan
-<<<<<<< HEAD
-developer dalam melakukan manajemen transaksi. Selain itu Spring framework 
-=======
 developer dalam melakukan manajemen transaksi.
 
 7. Apa perbedaan dari @RequestParam dan @PathVariable? Kapan sebaiknya menggunakan
@@ -217,3 +214,5 @@ Jawab:
 ResponseEntity adalah objek yang merepresentasikan HTTP response. Dengan ResponseEntity kita
 dapat mengkonfigurasikan HTTP response secara keseluruhan. BindingResult adalah sebuah objek 
 Spring yang menyimpan hasil validasi dan berisi kesalahan yang mungkin terjadi. 
+=======
+bagian navbar. Hal ini bertujuan untuk mengirim variable "page" ke fragment.

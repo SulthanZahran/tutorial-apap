@@ -59,6 +59,7 @@ public class ObatController {
         return "add-obat";
     }
 
+
     @PostMapping(value = "/obat/add-multiple/{noResep}", params = "submit")
     private String addMultipleObatSubmit(@ModelAttribute ResepModel resep, Model model){
         for(ObatModel obat: resep.getListObat()){

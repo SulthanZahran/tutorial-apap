@@ -9,6 +9,7 @@
 
 <body>
 
+
 <nav th:replace="fragments/fragment :: navbar (page = 'Add Multiple Obat')"></nav>
 <form th:action="@{'/obat/add-multiple/'+${noResep}}" th:object="${resep}" method="POST">
 <table class="table">
@@ -18,12 +19,14 @@
         <th>Nama</th>
         <th>Bentuk</th>
         <th>Kuantitas</th>
+
         <th><button class="btn btn-sm btn-primary" name="addRow"  type="submit" >Add Row</button></th>
     </tr>
     </thead>
     <tbody>
     <tr th:each="obat, iterationStatus : *{listObat}">
         <td><input type="text" th:field="*{listObat[__${iterationStatus.index}__].nama}" class="form-control"/></td>
+
         <td>
             <select name="tipe" th:field="*{listObat[__${iterationStatus.index}__].bentuk}" class="form-control">
                 <option value="0">Kapsul</option>
@@ -38,5 +41,6 @@
 </table>
 <button class="btn btn-success" type="submit" name="submit">Submit</button>
 </form>
+
 </body>
 </html>
