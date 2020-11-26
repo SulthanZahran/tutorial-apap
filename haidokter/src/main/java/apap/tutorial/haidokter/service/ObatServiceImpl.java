@@ -47,22 +47,28 @@ public class ObatServiceImpl implements ObatService {
     }
 
     @Override
-    public List<ObatModel> getObatByBentukKuantitas(String bentuk, Integer kuantitas){
-        private List<ObatModel> listObat;
-        for(ObatModel i: obatDb.findAll()){
-            if(bentuk == "Kapsul"){
-               ObatModel obat = obatDb.findByBentukdanKuantitas(0, kuantitas).get();
-               listObat.add(obat);
-            }
-            else if(bentuk == "Tablet"){
-                ObatModel obat = obatDb.findByBentukdanKuantitas(1, kuantitas).get();
-                listObat.add(obat);
-            }
-            else if(bentuk == "Sirup"){
-                ObatModel obat = obatDb.findByBentukdanKuantitas(2, kuantitas).get();
-                listObat.add(obat);
-            }
-        }
-        return listObat;
+    public void deleteObatByID(Long id){
+        ObatModel obat = getObatById(id);
+        obatDb.delete(obat);
     }
+
+//    @Override
+//    public List<ObatModel> getObatByBentukKuantitas(String bentuk, Integer kuantitas){
+//        private List<ObatModel> listObat;
+//        for(ObatModel i: obatDb.findAll()){
+//            if(bentuk == "Kapsul"){
+//               ObatModel obat = obatDb.findByBentukdanKuantitas(0, kuantitas).get();
+//               listObat.add(obat);
+//            }
+//            else if(bentuk == "Tablet"){
+//                ObatModel obat = obatDb.findByBentukdanKuantitas(1, kuantitas).get();
+//                listObat.add(obat);
+//            }
+//            else if(bentuk == "Sirup"){
+//                ObatModel obat = obatDb.findByBentukdanKuantitas(2, kuantitas).get();
+//                listObat.add(obat);
+//            }
+//        }
+//        return listObat;
+//    }
 }

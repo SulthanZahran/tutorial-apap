@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Delete Obat</title>
+    <object th:include="fragments/fragment :: css" th:remove="tag"></object>
+    <object th:include="fragments/fragment :: js" th:remove="tag"></object>
 </head>
+
 <body>
-<h2>Obat berhasil dihapus</h2>
-<a href="/">Kembali</a>
+
+<nav th:replace="fragments/fragment :: navbar"></nav>
+<div class="container-fluid">
+    <h3 th:text="${obatCount} + 'Obat telah berhasil dihapus'"></h3>
+    <a th:href="@{/}">Kembali ke home</a>
+</div>
+
 </body>
 </html>
