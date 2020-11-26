@@ -9,22 +9,24 @@
 
 <body>
 
-<nav th:replace="fragments/fragment :: navbar (page = 'View All Resep')"></nav>
+
+<nav th:replace="fragments/fragment :: navbar (page = 'Add Multiple Obat')"></nav>
+<form th:action="@{'/obat/add-multiple/'+${noResep}}" th:object="${resep}" method="POST">
 <table class="table">
+    <input type="hidden" th:field="*{noResep}"/>
     <thead>
     <tr>
         <th>Nama</th>
         <th>Bentuk</th>
         <th>Kuantitas</th>
-        <th><a th:href="@{/obat/add/}  + ${resep.noResep}" class="btn btn-primary">Add Row</a></th>
+
+        <th><button class="btn btn-sm btn-primary" name="addRow"  type="submit" >Add Row</button></th>
     </tr>
     </thead>
     <tbody>
-    <input type="hidden" th:field="${resep}"/>
     <tr th:each="obat, iterationStatus : *{listObat}">
-        <td>
-            <input type="text" th:field="*{listObat[__${iterationStatus.index}__].nama}" class="form-control"/>
-        </td>
+        <td><input type="text" th:field="*{listObat[__${iterationStatus.index}__].nama}" class="form-control"/></td>
+
         <td>
             <select name="tipe" th:field="*{listObat[__${iterationStatus.index}__].bentuk}" class="form-control">
                 <option value="0">Kapsul</option>
@@ -32,15 +34,13 @@
                 <option value="2">Sirup</option>
             </select>
         </td>
-        <td>
-            <input type="number" th:field="*{listObat[__${iterationStatus.index}__].kuantitas}">
-        </td>
-        <td>
-            <button th:value="${iterationStatus.index}" class="btn btn-danger" type="submit" name="deleteRow">Hapus Row</button>
-        </td>
+        <td><input type="number" th:field="*{listObat[__${iterationStatus.index}__].kuantitas}"></td>
+        <td><button th:value="${iterationStatus.index}" class="btn btn-danger" type="submit" name="deleteRow">Hapus Row</button></td>
     </tr>
     </tbody>
 </table>
-<button class="btn btn-success" type="submit" name="save">Submit</button>
+<button class="btn btn-success" type="submit" name="submit">Submit</button>
+</form>
+
 </body>
 </html>

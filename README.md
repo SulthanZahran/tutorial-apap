@@ -50,9 +50,6 @@ MsBuild, dan lain-lain
 6. Selain untuk pengembangan web, apa saja yang bisa dikembangkan dengan Spring framework?
 Spring framework dapat digunakan untuk memudahkan kita dalam membuat program yang minim akan
 komponen-komponen yang memiliki ketergantungan satu sama lain. Spring framework juga memudahkan
-<<<<<<< HEAD
-developer dalam melakukan manajemen transaksi. Selain itu Spring framework 
-=======
 developer dalam melakukan manajemen transaksi.
 
 7. Apa perbedaan dari @RequestParam dan @PathVariable? Kapan sebaiknya menggunakan
@@ -187,4 +184,35 @@ Jawab:
 Pada latihan nomor tiga, pada fragment, saya menambahkan sebuah tag div yang isinya adalah
 text. Text tersebut akan berisi sesuai dengan isi dari variable yang bernama "page". Untuk
 setiap page yang ingin ditambah text tersebut, saya akan menambah variabel page pada
+bagian navbar. Hal ini bertujuan untuk mengirim variable "page" ke fragment.
+
+## Tutorial 5
+1. Apa itu Postman? Apa kegunaannya?
+Jawab:
+Postman adalah sebuah aplikasi yang berguna untuk uji coba REST API. Postman menawarkan
+banyak fitur yang membantu dalam pengembangan API seperti:
+- Collection
+- Environment
+- Response
+- Mock Server
+- dll
+
+2. Jelaskan fungsi dari anotasi @JsonIgnoreProperties dan @JsonProperty.
+Jawab:
+@JsonIgnoreProperties berguna untuk mengabaikan attribut yang tidak tercantum dalam class
+sementara @JsonProperty berguna untuk menandai non-standard setter/getter ketika digunakan
+dengan sebuah properti JSON.
+
+3. Apa kegunaan atribut WebClient?
+Jawab:
+WebClient adalah sebuah interface yang mewakili titik masuk utama untuk melakukan request 
+web. WebClient berfungsi sebagai representasi entry point utama pada saat melakukan web
+request.
+
+4. Apa itu ResponseEntity dan BindingResult? Apa kegunaannya?
+Jawab:
+ResponseEntity adalah objek yang merepresentasikan HTTP response. Dengan ResponseEntity kita
+dapat mengkonfigurasikan HTTP response secara keseluruhan. BindingResult adalah sebuah objek 
+Spring yang menyimpan hasil validasi dan berisi kesalahan yang mungkin terjadi. 
+=======
 bagian navbar. Hal ini bertujuan untuk mengirim variable "page" ke fragment.

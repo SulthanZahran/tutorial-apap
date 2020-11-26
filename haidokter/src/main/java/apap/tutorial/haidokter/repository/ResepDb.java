@@ -10,4 +10,3 @@ import java.util.Optional;
 public interface ResepDb extends JpaRepository<ResepModel, Long>{
     Optional<ResepModel> findByNoResep(Long noResep);
 }
-    

@@ -2,18 +2,15 @@
 <html lang="en" xmlns:th="http://thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Delete Obat</title>
+    <title>Add Multiple Obat</title>
     <object th:include="fragments/fragment :: css" th:remove="tag"></object>
     <object th:include="fragments/fragment :: js" th:remove="tag"></object>
 </head>
 
 <body>
 
-<nav th:replace="fragments/fragment :: navbar"></nav>
-<div class="container-fluid">
-    <h3 th:text="${obatCount} + ' Obat telah berhasil dihapus'"></h3>
-    <a th:href="@{/}">Kembali ke home</a>
-</div>
-
+<nav th:replace="fragments/fragment :: navbar (page = 'Add Multiple Obat')"></nav>
+<h2 th:text="${listObat.size()} + ' obat berhasil ditambahkan.'"></h2>
+<a href="/">Kembali</a>
 </body>
 </html>
