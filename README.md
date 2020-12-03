@@ -256,29 +256,29 @@ untuk list My Favorites, checkbox bernilai True sehingga checkboxnya hidup.
 Latihan 2:
 Saya mengerjakan latihan 2 dengan membuat function removeAll() dan membuat button hapus yang onClick={this.removeAll}
 ke function removeAll()
-![](images/tutorial721.jpg)
-![](images/tutorial722.jpg)
+![](images/tutorial721.JPG)
+![](images/tutorial722.JPG)
 
 Latihan 3:
 Saya mengerjakan latihan 3 dengan memodifikasi function yang sebelumnya handleItemClick menjadi 2 function baru
 yaitu handleAddFavorite dan handleRemoveFavorite. handleAddFavorite berfungsi untuk menambah Item sementara
 handleRemoveFavorite untuk menghilangkan Item. Pada Item yang berada di List Movies akan dikenakan function
 handleAddFavorite dan untuk Item yang berada di  List My Favorites akan dikenakan function handleRemoveFavorite.
-![](images/tutorial731.jpg)
-![](images/tutorial732.jpg)
+![](images/tutorial731.JPG)
+![](images/tutorial732.JPG)
 
 Latihan 4:
 Saya mengerjakan latihan 4 dengan menambahkan sebuah state bernama toogleStat yang berupa boolean. Selanjutnya
 saya membuat function handleToogle yang berfungsi untuk memberikan nilai boolean berkebalikan dari state. Setelah
 itu membuat toogle switch dan menambahkan css untuk style switch tersebut.
-![](images/tutorial741.jpg)
-![](images/tutorial742.jpg)
+![](images/tutorial741.JPG)
+![](images/tutorial742.JPG)
 
 Latihan 5:
 Saya mengerjakan latihan 5 dengan membuat component baru bernama EmptyState dan mengecek pada component List.
 Apabila list tidak berisis, maka tampilkan component EmptyState
-![](images/tutorial751.jpg)
-![](images/tutorial752.jpg)
+![](images/tutorial751.JPG)
+![](images/tutorial752.JPG)
 
 2. Menurut pemahaman kamu selama pengerjaan tutorial ini, apa perbedaan antara state dan props?
 Jawab: props adalah data yang nilainya dapat dilemparkan dari satu component ke component lain. Nilai props
