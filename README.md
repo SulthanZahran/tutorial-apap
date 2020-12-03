@@ -242,3 +242,64 @@ UserDetailsService berfungsi sebagai autentikasi user dengan data yang berada di
 menerjemahkan data dari DB sehingga dapat digunakan oleh bahasa pemrograman yang digunakan sehingga dapat
 untuk proses autentikasi.
 
+## Tutorial 7
+1. Jelaskan apa yang Anda lakukan di latihan dalam satu paragraf per-soal. Berikan screenshot sebagai ilustrasi
+dari apa yang Anda jelaskan.
+Jawab: 
+Latihan 1:
+Saya mengerjakan latihan 1 dengan menambahkan parameter untuk function List yaitu checkbox. parameter checkbox
+merupakan boolean. Untuk list yang berada di List Movies, checkbox bernilai false sehingga checkbox mati sedangkan
+untuk list My Favorites, checkbox bernilai True sehingga checkboxnya hidup.
+![](images/tutorial711.jpg)
+![](images/tutorial712.jpg)
+
+Latihan 2:
+Saya mengerjakan latihan 2 dengan membuat function removeAll() dan membuat button hapus yang onClick={this.removeAll}
+ke function removeAll()
+![](images/tutorial721.jpg)
+![](images/tutorial722.jpg)
+
+Latihan 3:
+Saya mengerjakan latihan 3 dengan memodifikasi function yang sebelumnya handleItemClick menjadi 2 function baru
+yaitu handleAddFavorite dan handleRemoveFavorite. handleAddFavorite berfungsi untuk menambah Item sementara
+handleRemoveFavorite untuk menghilangkan Item. Pada Item yang berada di List Movies akan dikenakan function
+handleAddFavorite dan untuk Item yang berada di  List My Favorites akan dikenakan function handleRemoveFavorite.
+![](images/tutorial731.jpg)
+![](images/tutorial732.jpg)
+
+Latihan 4:
+Saya mengerjakan latihan 4 dengan menambahkan sebuah state bernama toogleStat yang berupa boolean. Selanjutnya
+saya membuat function handleToogle yang berfungsi untuk memberikan nilai boolean berkebalikan dari state. Setelah
+itu membuat toogle switch dan menambahkan css untuk style switch tersebut.
+![](images/tutorial741.jpg)
+![](images/tutorial742.jpg)
+
+Latihan 5:
+Saya mengerjakan latihan 5 dengan membuat component baru bernama EmptyState dan mengecek pada component List.
+Apabila list tidak berisis, maka tampilkan component EmptyState
+![](images/tutorial751.jpg)
+![](images/tutorial752.jpg)
+
+2. Menurut pemahaman kamu selama pengerjaan tutorial ini, apa perbedaan antara state dan props?
+Jawab: props adalah data yang nilainya dapat dilemparkan dari satu component ke component lain. Nilai props
+biasanya diturunkan dari component parent ke component child-nya. Sedangkan state adalah data private dari
+sebuah component. State tidak dapat dilemparkan ke component lain dan tidak dapat diakses oleh component lain.
+
+3. Apa keuntungan menggunakan component (e.g. List, Item) di React? Berikan contohnya!
+Jawab: Penggunaan component di React dapat digunakan berulang kali. Dengan hanya membuat component sekali, kita
+dapat menggunakan component tersebut berkali-kali. Component di React juga dapat disarangkan/dikombinasikan
+dengan component lain. Contoh seperti pada tutorial. Dapat dilihat bahwa component Item dimasukkan ke dalam 
+component List sehingga kedua component(Item & List) dapat membentuk suatu hal yang lebih kompleks (List yang
+berisi Item).
+
+4. Menurut kamu, apa saja kelebihan menggunakan React dalam pengembangan web?
+Jawab:
+- Penggunaan component dalam react
+- membagi beberapa user interface menjadi beberapa bagian yang independen
+
+5. Menurut kamu, apa saja kekurangan menggunakan React dalam pengembangan web?
+Jawab:
+- Beberapa versi lawas tidak mendukung/support ReactJS
+- ReactJs memiliki dokumentasi yang buruk
+
+
