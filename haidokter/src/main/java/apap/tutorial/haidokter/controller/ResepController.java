@@ -100,10 +100,10 @@ public class ResepController {
     @Autowired
     private ObatService obatService;
 
-    @GetMapping("/")
-    private String home(){
-        return "home";
-    }
+//    @GetMapping("")
+//    private String home(){
+//        return "home";
+//    }
 
     @GetMapping("/resep/add")
     public String addResepFormPage(Model model){

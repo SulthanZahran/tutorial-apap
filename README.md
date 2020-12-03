@@ -216,3 +216,29 @@ dapat mengkonfigurasikan HTTP response secara keseluruhan. BindingResult adalah 
 Spring yang menyimpan hasil validasi dan berisi kesalahan yang mungkin terjadi. 
 =======
 bagian navbar. Hal ini bertujuan untuk mengirim variable "page" ke fragment.
+
+## Tutorial 6
+1.Jelaskan secara singkat perbedaan Otentikasi dan Otorisasi! Di bagian mana (dalam kode yang telah anda
+buat) konsep tersebut diimplementasi?
+Jawab: Otentikasi adalah proses untuk menentukan apakah sebuah user ada/sesuai sementara otorisasi adalah
+proses untuk mengidentifikasi apakah sebuah user berhak untuk mengakses suatu seumber daya. Pada file 
+WebSecurityConfig.java pada bagian configure.
+
+2. Apa itu BCryptPasswordEncoder? Jelaskan secara singkat cara kerjanya!
+Jawab: BCryptPasswordEncoder adalah sebuah objek Spring untuk meng-encode sebuah password. Encode dilakuan
+dengan BCrypt hashing function. Cara menggunakannya pertama adalah dengan membuat objek BCryptPasswordEncoder.
+Selanjutnya selanjutnya objek digunakan dengan sebuah method yang berparameter password yang ingin di encode.
+
+3. Jelaskan secara singkat apa itu UUID beserta penggunaannya!
+Jawab: UUID adalah sebuah angka yang digunakan untuk identifikasi sesuatu secara unik.UUID menggunakan nilai
+sebanyak 128-bit. UUID dibuat dengan teknik khusus sehingga unik satu sama lain. UIID sangat cocok digunakan
+sebagai primary key sehingga sangat cocok juga digunakan sebagai identifier.
+
+4. Apa kegunaan class UserDetailsServiceImpl.java? Mengapa harus ada class tersebut padahal kita sudah
+memiliki class UserServiceImpl.java?
+Jawab: UserDetailsServiceImpl adalah sebuah file yang mengimplement file UserDetailsService bawaan Spring
+security sehingga tidak sama dengan UserServiceImpl.java yang mengimplement UserService yang dibuat di lokal.
+UserDetailsService berfungsi sebagai autentikasi user dengan data yang berada di DB. UserDetailsService akan 
+menerjemahkan data dari DB sehingga dapat digunakan oleh bahasa pemrograman yang digunakan sehingga dapat
+untuk proses autentikasi.
+
