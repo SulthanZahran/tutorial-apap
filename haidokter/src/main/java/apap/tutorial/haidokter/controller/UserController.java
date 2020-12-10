@@ -18,9 +18,13 @@ public class UserController {
     private UserService userService;
 
     @RequestMapping(value = "/addUser", method = RequestMethod.POST)
-    private String addUserSubmit(@ModelAttribute UserModel user){
-        userService.addUser(user);
-        return "redirect:/";
+    private String addUserSubmit(@ModelAttribute UserModel user, Model model){
+        if(userService.addUser(user) == true){return "redirect:/";}
+        else{
+            model.addAttribute("text", "Username tidak tersedia");
+            return "redirect:/";
+        }
+
     }
 
     @RequestMapping(value = "/updatePassword", method = RequestMethod.GET)

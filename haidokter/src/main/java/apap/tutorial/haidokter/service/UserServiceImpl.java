@@ -12,10 +12,17 @@ public class UserServiceImpl implements UserService{
     private UserDb userDb;
 
     @Override
-    public UserModel addUser(UserModel user){
-        String pass = encrypt(user.getPassword());
-        user.setPassword(pass);
-        return userDb.save(user);
+    public Boolean addUser(UserModel user){
+        if(findUserByUsername(user.getUsername()) == null ){
+            String pass = encrypt(user.getPassword());
+            user.setPassword(pass);
+            userDb.save(user);
+            return true;
+        }
+        else{
+            return false;
+        }
+
     }
 
     @Override
