@@ -24,6 +24,7 @@ public class UserController {
             model.addAttribute("text", "Username tidak tersedia");
             return "redirect:/";
         }
+
     }
 
     @RequestMapping(value = "/updatePassword", method = RequestMethod.GET)

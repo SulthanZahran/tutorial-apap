@@ -302,4 +302,3 @@ Jawab:
 - Beberapa versi lawas tidak mendukung/support ReactJS
 - ReactJs memiliki dokumentasi yang buruk
 
-
