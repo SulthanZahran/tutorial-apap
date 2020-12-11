@@ -302,3 +302,35 @@ Jawab:
 - Beberapa versi lawas tidak mendukung/support ReactJS
 - ReactJs memiliki dokumentasi yang buruk
 
+## Tutorial 8
+1. Ceritakan langkah - langkah yang kalian lakukan untuk solve LATIHAN no.1, dan mengapa kalian
+melakukan langkah - langkah tersebut?
+Jawab: menambahkan namaDokter: "", namaPasien: "", catatan: "" pada setState di fungsi handleCancel
+(setState namaPasien, catatan, namaDokter dengan string kosong). Saya melakukan setState di fungsi
+handleCancel karena pada saat submit, fungsi handleCancel dipanggil di paling terakhir.
+
+2. Jelaskan fungsi dari async dan await!
+Jawab: async dan await digunakan untuk mengatasi masalah yang bersifat asynchronous dalam javascript.
+async adalah kata kunci yang digunakan sebelum fungsi dan await digunakan pada fungsi yang menggunakan
+kata kunci async. Kata kunci async mengubah fungsi menjadi asynchronous dan kata kunci await berfungsi
+untuk menunda sebuah kode dijalankan sampai proses asynchronous berhasil.
+
+3. Masukkan jawaban dari Screenshot yang diperintahkan di halaman 8 pada Component Lifecycle
+pada pertanyaan ini.
+Jawab:
+![](images/tutorial8no3/1.1.JPG)
+![](images/tutorial8no3/1.2.JPG)
+![](images/tutorial8no3/2.JPG)
+![](images/tutorial8no3/3.JPG)
+![](images/tutorial8no3/6.JPG)
+![](images/tutorial8no3/7.JPG)
+![](images/tutorial8no3/8.JPG)
+
+4. Jelaskan fungsi dari componentDidMount, shouldComponentUpdate,componentDidUpdate, 
+componentWillReceiveProps,componentWillUnmount.
+Jawab:
+componentDidMount: saat component berhasil di render untuk pertama kalinya 
+shouldComponentUpdate: dipanggil setelah render, shouldComponentUpdate berguna untuk mengatur apakah render ulang diperlukan atau tidak
+componentDidUpdate: dipanggil setelah fungsi render. componentDidUpdate ini berguna untuk melakukan operasi DOM setelah data telah diperbaharui
+componentWillReceiveProps : dipanggil ketika props telah berubah dan tidak pada saat rendering awal. ComponentWillReceiveProps berguna untuk mengubah state berdasar pada props yang sekarang dan props baru, tanpa memicu rendering lagi  
+componentWillUnmount: dipanggil ketika komponen telah dibuang dari DOM. Fungsi ini berguna ketika aksi-aksi yang berhubungan dengan permbersihan diperlukan
