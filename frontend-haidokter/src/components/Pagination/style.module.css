@@ -1,0 +1,8 @@
+.nav{
+}
+
+.li{
+    float: left;
+    list-style-type: none;
+    padding: 16px;
+}
